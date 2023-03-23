@@ -1,0 +1,25 @@
+@import "~bootstrap/scss/bootstrap";
+
+.btn-left {
+    height: 44px;
+    width: 192px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 62px;
+}
+
+.btn-group > :not(.btn-check:first-child) + .btn, .btn-group > .btn-group:not(:first-child) {
+    margin-left: 62px;
+    margin-right: 369px;
+}
+
+.left {
+    height: 583px;
+    width: 354px;
+}
+
+.card {
+    height: 506px;
+    width: 220px;
+    padding: 14px;
+}

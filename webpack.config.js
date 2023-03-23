@@ -48,6 +48,14 @@ module.exports = {
         test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
         use: "file-loader",
       },
+      {
+        test: /\.jpg/,
+        type: 'asset/resource', 
+      },
+      {
+        test: /\.png/,
+        type: 'asset/resource', 
+      },
     ],
   },
   plugins: [
