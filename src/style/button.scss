@@ -1,0 +1,50 @@
+.btn-left {
+    height: 44px;
+    width: 192px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+.top-button-group {
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-right: 48px;
+}
+
+.down-button-group {
+ padding-top: 15px;
+ padding-bottom: 15px;
+ padding-right: 20px;
+ margin-right: 80px;
+}
+
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn.dropdown-toggle-split:first-child, .btn-group > .btn-group:not(:last-child) > .btn {
+    border-radius: 8px;
+}
+
+.btn-group > :not(.btn-check:first-child) + .btn, .btn-group > .btn-group:not(:first-child) {
+    margin-left: 20px;
+}
+
+.btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn, .btn-group > .btn-group:not(:first-child) > .btn {
+    border-radius: 8px;
+}
+
+.left {
+    height: 583px;
+    width: 354px;
+}
+
+.btn-group {
+    border: 1px dashed #9747FF;
+    border-radius: 5px;
+    margin-left: 42px;
+}
+
+.disable {
+    background-color: #E6EBF0;
+    color:  #C8CDD2;
+}
