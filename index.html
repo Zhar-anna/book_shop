@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Playing Card Shop</title>
     </head>
-    <body class="d-flex justify-content-between">
+    <body class="d-flex justify-content-around">
     <section class="left d-flex flex-column">
       <div class="btn-group top-button-group d-flex flex-column justify-content-between" role="group">
         <button class="btn btn-light btn-left" type="button">В корзину</button>
@@ -21,10 +21,16 @@
       </div>
     </section>
     <main class="container-fluid">
-      <p class="head">Лучшее</p>
+      <div class="d-flex justify-content-between">
+        <p class="head">Лучшее</p>
+        <div class="arrow">
+          <button class="emerge left_arrow cp">&larr;</button>
+          <button class="emerge right_arrow cp">&rarr;</button>
+        </div>
+      </div>
         <div class="row align-items-center">
           <div class="col">
-            <div class="card">
+            <div class="card active">
               <img src="" class="card-img-top pic" alt="...">
               <img class="heart">
               <img class="ellipse">
@@ -32,7 +38,6 @@
               <div class="text-light bg-dark sale">-55% ещё 2 дня</div>
               <div class="card-body">
                 <h5 class="card-title">1350 ₽<span class="striked up">1500 ₽</span><img class="restart"><img class="rubles"></h5>
-                <!-- <p class="card-text"> -->
                   <div class="author">за 2 тома</div>
                   <div class="title-book">Пиковая Дама</div>
                   <div class="author">Пушкин Александр</div>
@@ -43,14 +48,13 @@
                     <img class="talk">
                     1234
                   </div>
-                <!-- </p> -->
-                <a href="#" class="btn btn-light ">В корзину</a>
+                <a href="#" class="btn btn-light add">В корзину</a>
                 <div class="free">Доставим бесплатно</div>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card nonactive">
               <img src="" class="card-img-top pic" alt="...">
               <img class="heart">
               <img class="ellipse">
@@ -58,7 +62,6 @@
               <div class="text-light bg-dark sale">-55% ещё 2 дня</div>
               <div class="card-body">
                 <h5 class="card-title">1350 ₽<span class="striked up">1500 ₽</span><img class="restart"><img class="rubles"></h5>
-                <!-- <p class="card-text"> -->
                   <div class="author">за 2 тома</div>
                   <div class="title-book">Пиковая Дама</div>
                   <div class="author">Пушкин Александр</div>
@@ -69,14 +72,13 @@
                     <img class="talk">
                     1234
                   </div>
-                <!-- </p> -->
-                <a href="#" class="btn btn-light ">В корзину</a>
+                <a href="#" class="btn btn-light add">В корзину</a>
                 <div class="free">Доставим бесплатно</div>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card nonactive">
               <img src="" class="card-img-top ruler" alt="...">
               <img class="heart">
               <div class="card-body">
@@ -89,12 +91,12 @@
                     <img class="talk">
                     1234
                   </div>
-                <a href="#" class="btn btn-light ">Найти похожее</a>
+                <a href="#" class="btn btn-light add add-down">Найти похожее</a>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card nonactive">
               <img src="" class="card-img-top pic" alt="...">
               <img class="heart">
               <div class="card-body">
@@ -102,12 +104,12 @@
                   <div class="title-book">Пиковая Дама</div>
                   <div class="author">Пушкин Александр</div>
                   <div class="author">Лабиринт/Детская художес...</div>
-                <a href="#" class="btn btn-light ">Найти похожее</a>
+                <a href="#" class="btn btn-light add add-down">Найти похожее</a>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card nonactive">
               <img src="" class="card-img-top pic" alt="...">
               <img class="heart">
               <img class="ellipse">
@@ -115,7 +117,6 @@
               <div class="text-light bg-dark sale">-55% ещё 2 дня</div>
               <div class="card-body">
                 <h5 class="card-title">1350 ₽<span class="striked up">1500 ₽</span><img class="restart"><img class="rubles"></h5>
-                <!-- <p class="card-text"> -->
                   <div class="author">за 2 тома</div>
                   <div class="title-book">Пиковая Дама</div>
                   <div class="author">Пушкин Александр</div>
@@ -126,14 +127,13 @@
                     <img class="talk">
                     1234
                   </div>
-                <!-- </p> -->
-                <a href="#" class="btn btn-light ">В корзину</a>
+                <a href="#" class="btn btn-light add">В корзину</a>
                 <div class="free">Доставим бесплатно</div>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card nonactive">
               <img src="" class="card-img-top pic" alt="...">
               <img class="heart">
               <img class="ellipse">
@@ -141,7 +141,6 @@
               <div class="text-light bg-dark sale">-55% ещё 2 дня</div>
               <div class="card-body">
                 <h5 class="card-title">1350 ₽<span class="striked up">1500 ₽</span><img class="restart"><img class="rubles"></h5>
-                <!-- <p class="card-text"> -->
                   <div class="author">за 2 тома</div>
                   <div class="title-book">Пиковая Дама</div>
                   <div class="author">Пушкин Александр</div>
@@ -152,8 +151,7 @@
                     <img class="talk">
                     1234
                   </div>
-                <!-- </p> -->
-                <a href="#" class="btn btn-light ">В корзину</a>
+                <a href="#" class="btn btn-light add">В корзину</a>
                 <div class="free">Доставим бесплатно</div>
               </div>
             </div>

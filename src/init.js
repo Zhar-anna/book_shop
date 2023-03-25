@@ -40,6 +40,40 @@ const init = () => {
   ellipses.forEach((e) => e.src = ellips);
   const gifts = document.querySelectorAll('.gift');
   gifts.forEach((g) => g.src = gift);
+
+  const leftbutton = document.querySelector('.left_arrow');
+  const rightbutton = document.querySelector('.right_arrow');
+  const cards = document.querySelectorAll('.card');
+  let arrayCards = [];
+  cards.forEach((card) => arrayCards.push(card));
+  rightbutton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const active = document.querySelector('.active');
+    let activeIndex = arrayCards.indexOf(active);
+    active.classList.remove('active');
+    active.classList.add('nonactive')
+    activeIndex += 1;
+    if (activeIndex > 5) {
+      activeIndex = 0;
+    }
+    const activeEl = arrayCards[activeIndex];
+    activeEl.classList.add('active');
+    activeEl.classList.remove('nonactive');
+  });
+  leftbutton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const active = document.querySelector('.active');
+    let activeIndex = arrayCards.indexOf(active);
+    active.classList.remove('active');
+    active.classList.add('nonactive')
+    activeIndex -= 1;
+    if (activeIndex <= 0) {
+      activeIndex = 5;
+    }
+    const activeEl = arrayCards[activeIndex];
+    activeEl.classList.add('active');
+    activeEl.classList.remove('nonactive');
+  });
 };
 
 export default init;

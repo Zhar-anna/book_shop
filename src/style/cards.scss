@@ -1,4 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
+.col {
+    height: 506px;
+    width: 220px;
+    padding: 0;
+}
 
 .pic {
     padding: 16px;
@@ -13,11 +18,11 @@
 
 .card-title {
     font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 24px;
-color: #1C1917;
-margin-top: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1C1917;
+    margin-top: 10px;
 }
 
 .card-body {
@@ -52,25 +57,30 @@ margin-top: 10px;
 
 .title-book {
     font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 140%;
-color: #1C1917;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #1C1917;
 }
 
 .free {
     font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 140%;
-color: #69A042;
-margin-top: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    color: #69A042;
+    margin-top: 8px;
 }
 
 .add {
     border: 1px solid #1A1F24;
     border-radius: 10px;
 }
+
+.add-down {
+    margin-top: 45px;
+}
+
 .heart,
 .gift {
     position: absolute;
@@ -85,8 +95,7 @@ margin-top: 8px;
 }
 
 .heart {
-    margin-left: 175px;
-    margin-bottom: 30px;
+    margin: 0 0 30px 175px;
 }
 
 .ellipse {
@@ -106,8 +115,8 @@ margin-top: 8px;
     border-radius: 0px 5px 0px 5px;
     padding: 5px 5px 5px 11px;
     font-weight: 700;
-font-size: 12px;
-line-height: 130%;
+    font-size: 12px;
+    line-height: 130%;
 }
 
 .restart,
@@ -118,8 +127,7 @@ line-height: 130%;
 }
 
 .rubles {
-    margin-left: 50px;
-    margin-top: 3px;
+    margin: 3px 0 0 50px;
 }
 
 .restart {
@@ -127,13 +135,12 @@ line-height: 130%;
 }
 
 .grade {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin: 8px 0 8px 0;
     font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 140%;
-color: #64696E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #64696E;
 }
 
 .star,
@@ -142,4 +149,12 @@ color: #64696E;
 }
 .talk {
     margin-left: 8px;
+}
+
+.ruler {
+    margin: 60px 0 100px 0;
+}
+
+.nonactive {
+    border: none;
 }
